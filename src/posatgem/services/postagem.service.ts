@@ -33,7 +33,10 @@ export class PostagemService{
                 titulo: ILike(`%${titulo}%`)
             }
         })
-
     } 
+
+    async create(postagem:Postagem): Promise<Postagem>{
+        return await this.postagemRepository.save(postagem)
+    }
 
 }
