@@ -1,9 +1,10 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { PostagemModule } from './posatgem/postagem.module';
-import { Postagem } from './posatgem/entities/postagem.Entidade';
+import { Postagem } from './posatgem/entities/postagem.entidade';
 import { Tema } from './tema/entities/tema.entity';
 import { TemaModule } from './tema/tema.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { TemaModule } from './tema/tema.module';
     }),
     PostagemModule,
     TemaModule,
+    AuthModule
   ],
   controllers: [],
   providers: [],

@@ -1,6 +1,6 @@
 import { IsNotEmpty } from "class-validator";
 import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
-import { Postagem } from "../../posatgem/entities/postagem.Entidade";
+import { Postagem } from "../../posatgem/entities/postagem.entidade";
 
 @Entity({name: "tb_temas"})
 export class Tema {
